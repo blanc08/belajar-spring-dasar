@@ -1,5 +1,6 @@
 package com.blanc08.belajarspringdasar;
 
+import com.blanc08.belajarspringdasar.repository.ProductRepository;
 import com.blanc08.belajarspringdasar.service.ProductService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,5 +24,13 @@ public class ComponentTest {
         ProductService productService2 = applicationContext.getBean("productService", ProductService.class);
 
         Assertions.assertSame(productService1, productService2);
+    }
+
+    @Test
+    void testConstructorDependencyInjection() {
+        ProductService productService = applicationContext.getBean(ProductService.class);
+        ProductRepository productRepository = applicationContext.getBean(ProductRepository.class);
+
+        Assertions.assertSame(productRepository, productService.getProductRepository());
     }
 }
