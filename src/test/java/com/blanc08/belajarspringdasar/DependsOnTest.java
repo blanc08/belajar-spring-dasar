@@ -1,5 +1,6 @@
 package com.blanc08.belajarspringdasar;
 
+import com.blanc08.belajarspringdasar.data.Foo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
@@ -16,6 +17,6 @@ public class DependsOnTest {
 
     @Test
     void testDependsOn() {
-
+        Foo foo = applicationContext.getBean(Foo.class);
     }
 }
