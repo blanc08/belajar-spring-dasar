@@ -1,4 +1,4 @@
-package com.blanc08.belajarspringdasar;
+package com.blanc08.belajarspringdasar.configuration;
 
 import com.blanc08.belajarspringdasar.data.Bar;
 import org.springframework.context.annotation.Bean;
