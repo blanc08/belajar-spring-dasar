@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DependencyInjectionConfiguration {
 
-    @Bean
+    @Bean(name = "FooDI")
     public Foo foo(){
         return new Foo();
     }
