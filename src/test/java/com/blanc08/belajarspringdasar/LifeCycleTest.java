@@ -1,6 +1,7 @@
 package com.blanc08.belajarspringdasar;
 
 import com.blanc08.belajarspringdasar.data.Connection;
+import com.blanc08.belajarspringdasar.data.Server;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,5 +26,10 @@ public class LifeCycleTest {
     @Test
     void testConnection() {
         applicationContext.getBean(Connection.class);
+    }
+
+    @Test
+    void testServer() {
+        applicationContext.getBean(Server.class);
     }
 }

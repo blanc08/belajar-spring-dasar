@@ -1,6 +1,7 @@
 package com.blanc08.belajarspringdasar;
 
 import com.blanc08.belajarspringdasar.data.Connection;
+import com.blanc08.belajarspringdasar.data.Server;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,5 +13,9 @@ public class LifeCycleConfiguration {
         return new Connection();
     }
 
-
+    // @Bean(initMethod = "start", destroyMethod = "stop")
+    @Bean
+    public Server server() {
+        return new Server();
+    }
 }
