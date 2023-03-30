@@ -2,6 +2,7 @@ package com.blanc08.belajarspringdasar;
 
 import com.blanc08.belajarspringdasar.listerner.LoginAgainSuccessListener;
 import com.blanc08.belajarspringdasar.listerner.LoginSuccessListener;
+import com.blanc08.belajarspringdasar.listerner.UserListener;
 import com.blanc08.belajarspringdasar.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,8 @@ public class EventListenerTest {
     @Import({
             UserService.class,
             LoginSuccessListener.class,
-            LoginAgainSuccessListener.class
+            LoginAgainSuccessListener.class,
+            UserListener.class
     })
     public static class TestConfiguration {
     }
