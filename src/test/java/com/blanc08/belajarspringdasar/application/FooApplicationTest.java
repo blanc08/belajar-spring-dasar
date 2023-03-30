@@ -1,4 +1,4 @@
-package com.blanc08.belajarspringdasar;
+package com.blanc08.belajarspringdasar.application;
 
 import com.blanc08.belajarspringdasar.application.FooApplication;
 import com.blanc08.belajarspringdasar.data.Foo;
